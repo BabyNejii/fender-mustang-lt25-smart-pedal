@@ -200,7 +200,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 # 4. Clone repository and install systemd auto-start daemon
 cd /home/pi
-git clone https://github.com/user/fender-mustang-lt25-smart-pedal.git .
+git clone https://github.com/BabyNejii/fender-mustang-lt25-smart-pedal.git .
 sudo cp systemd/lt25-pedal.service /etc/systemd/system/lt25-pedal.service
 sudo systemctl daemon-reload
 sudo systemctl enable --now lt25-pedal.service

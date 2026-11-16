@@ -108,7 +108,7 @@ Clone the repository or copy the project files to the `/home/pi` directory:
 
 ```bash
 cd /home/pi
-git clone https://github.com/user/fender-mustang-lt25-smart-pedal.git .
+git clone https://github.com/BabyNejii/fender-mustang-lt25-smart-pedal.git .
 ```
 
 Verify that the following files are present:
@@ -142,7 +142,7 @@ The systemd unit configuration is defined in [`systemd/lt25-pedal.service`](../s
 ```ini
 [Unit]
 Description=Fender Mustang LT25 Smart Footswitch Controller Daemon
-Documentation=https://github.com/user/fender-mustang-lt25-smart-pedal
+Documentation=https://github.com/BabyNejii/fender-mustang-lt25-smart-pedal
 After=network.target sound.target
 Wants=sound.target
 

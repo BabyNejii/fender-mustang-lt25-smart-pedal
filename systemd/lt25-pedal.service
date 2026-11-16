@@ -1,6 +1,6 @@
 [Unit]
 Description=Fender Mustang LT25 Smart Footswitch Controller Daemon
-Documentation=https://github.com/user/fender-mustang-lt25-smart-pedal
+Documentation=https://github.com/BabyNejii/fender-mustang-lt25-smart-pedal
 After=network.target sound.target
 Wants=sound.target
 
