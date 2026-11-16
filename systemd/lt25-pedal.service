@@ -1,0 +1,25 @@
+[Unit]
+Description=Fender Mustang LT25 Smart Footswitch Controller Daemon
+Documentation=https://github.com/user/fender-mustang-lt25-smart-pedal
+After=network.target sound.target
+Wants=sound.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python3 /home/pi/lt25_smart_pedal.py
+Restart=always
+RestartSec=3
+KillSignal=SIGINT
+TimeoutStopSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=lt25-pedal
+Environment=PYTHONUNBUFFERED=1
+
+# Hardware access security relaxations for rpi_ws281x DMA/PWM memory access
+LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=multi-user.target
